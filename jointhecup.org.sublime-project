@@ -1,0 +1,22 @@
+{
+	"folders":
+  [
+    {
+      "file_exclude_patterns":
+      [
+        ".gitignore",
+        "config.rb",
+        "jointhecup.org.sublime-workspace",
+        "jointhecup.org.sublime-project"
+      ],
+      "folder_exclude_patterns":
+      [
+        "zips",
+        ".sass-cache",
+        "pixelmator",
+        "images"
+      ],
+			"path": "/Users/Jean/nulvierdrie/websites/jointhecup.org"
+		}
+	]
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <title>{title} - Fill The Cup</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" type="text/css" href="styles/styling.css" />
+    <link rel="stylesheet" type="text/css" href="styles/counter.css" />
+    <script src="scripts/flipcounter.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="styles/ie.css" />
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="startpagina">
+    <header>
+      <div id="topbar">
+        <div class="container" style="z-index: 80">
+          <div id="mede-mogelijk-gemaakt-door">
+            In samenwerking met het<br />
+            <span class="wfp">World Food Programme</span>
+            <img src="images/wfp-small.png" />
+          </div>
+          <ul>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="antwoorden.html">antwoorden</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container" style="z-index:100;">
+        <div id="logo">
+          <div id="flip-counter" class="flip-counter"></div>
+          kinderen gevoed
+        </div>
+        <div id="slogan">Wij een maaltijd, zij een maaltijd.</div>
+      </div>
+
+      <div class="container header-height" style="z-index: 10;">
+        <div id="main-navigation">
+          <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="hoe.html">Hoe werkt het</a></li>
+            <li><a href="deelnemers.html">Welke restaurants doen mee?</a></li>
+            <li><a href="restaurants.html">Uw restaurant</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  
+    <div id="content">
+      <div class="container">
+        <div id="action-buttons">
+          Wat kan jij doen?
+          <a class="action-button" href="hoe.html">3. Spread the message</a>
+          <a class="action-button" href="deelnemers.html">2. Eet bij</a>
+          <a class="action-button" href="restaurants.html">1. Doe nu mee</a>
+        </div>
+
+        <div class="content-block-wrapper">
+          <div style="height: 278px" class="content-block photo1 one-third left"></div>
+          <div class="content-block white two-third right">
+            <div class="inner-block">
+            <strong>Wij een maaltijd, zij een maaltijd</strong>
+            <p>Nog steeds gaan elke dag miljoenen kinderen met honger naar bed. Jij kan daar verandering in brengen. Als jij elke keer als je uit eten gaat slechts 20 cent extra betaalt, help jij een kind aan een maaltijd op school. Steeds meer restaurants doen mee, zo bereiken we steeds meer kinderen. Je gunt een kind toch ook een goede maaltijd! Voor 20 cent kan jij het verschil maken. Small change, big difference.</p>
+            </div>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+
+        <div class="content-block-wrapper">
+          <div class="content-block black">
+            <div style="padding: 10px; text-align: center;">
+              <iframe width="970" height="380" src="http://www.youtube.com/embed/8CSPEFSok3Q" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: -40px; margin-top: 70px;" class="center">
+          <img style="display: block; margin: 0 auto 40px auto;" src="images/logo-small.png" />
+        </div>
+
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+      var meals = Math.floor((((new Date().getTime()))/1000/4) - 329908000);
+      var myCounter = new flipCounter('flip-counter', {value: meals, pace:4000, tFH: 25, bFH: 41, fW: 34, bOffset: 249 });
+    </script>
+
+  </body>
+</html>

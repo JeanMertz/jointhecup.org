@@ -1,0 +1,120 @@
+@import "compass";
+
+$container_width: 990px;
+$red: #d73230;
+
+#main-navigation {
+  ul {
+    li {
+      display: inline;
+      a {
+        background: rgb(0,0,0);
+        &:hover {
+          background: rgb(50, 50, 50);
+          color: $red;
+          }
+        }
+      }
+    }
+  }
+
+body.startpagina {
+  header {
+    $header_height: 600px;
+
+    $topbar_height: 100px;
+
+    $logo_height: 320px;
+    $logo_width: 220px;
+
+
+    font-family: verdana;
+    color: white;
+
+    position: relative;
+    width: 100%;
+    height: $header_height;
+    background: url(../images/header-startpagina.jpg) top left;
+    @include box-shadow( rgba(0, 0, 0, 0.4) 0 -6px 14px 0 inset);
+
+    .header-height { height: $header_height; }
+
+    #topbar {
+
+      position: absolute;
+      width: 100%;
+      height: $topbar_height;
+      background: rgb(0,0,0);
+
+      font-family: "Helvetica Neue", Arial;
+      letter-spacing: 2px;
+      font-weight: 100;
+      font-size: 1em;
+
+      #mede-mogelijk-gemaakt-door {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: $logo_width + 20px;
+        width: 600px;
+        height: $topbar_height;
+
+        .wfp { font-weight: 300; }
+
+        img { position: absolute; top: 10px; right: 0}
+        }
+
+      ul {
+        display: table-cell;
+        vertical-align: middle;
+        width: $container_width;
+        height: $topbar_height;
+        list-style: none;
+        text-align: right;
+
+        li {
+          display: inline;
+          margin-left: 20px;
+          }
+        }
+      }
+
+    #logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: $logo_width;
+      height: $logo_height;
+      background: rgb(255, 255, 255) url(../images/logo-small.png) 45% 80% no-repeat;
+      @include border-bottom-radius(30px);
+      @include box-shadow( rgba(0, 0, 0, 0.8) 0 0 10px);
+      @include box-shadow( rgba(0, 0, 0, 0.27) 0 1px 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset);
+
+      text-align: center;
+      font-family: "Helvetica Neue", Arial;
+      
+      font-weight: 300;
+      font-size: 1.3em;
+      color: black;
+
+      #flip-counter {
+        margin: 20px 0 8px 17px;
+        height: 52px;
+        overflow: hidden;
+        @include opacity(0.9);
+        }
+      }
+
+    #slogan {
+      position: absolute;
+      top: $logo_height + 10px;
+      left: 40px;
+
+
+      font-size: 1.7em;
+      font-style: italic;
+      @include single-text-shadow(black, 0, 1px, 0);
+      }
+
+    }
+  }

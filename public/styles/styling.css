@@ -1,0 +1,635 @@
+/* line 7, ../../assets/sass/styling.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, ../../assets/sass/styling.scss */
+body {
+  background: #f4eedc;
+}
+
+/* line 16, ../../assets/sass/styling.scss */
+.container {
+  position: relative;
+  width: 990px;
+  margin: 0 auto;
+}
+/* line 21, ../../assets/sass/styling.scss */
+.container.no-shadow {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  height: 10px;
+  z-index: 300;
+  background: white;
+}
+
+/* line 24, ../../assets/sass/styling.scss */
+#content {
+  background: #F4EEDC;
+  padding: 40px 0;
+}
+/* line 27, ../../assets/sass/styling.scss */
+#content .container {
+  z-index: 200;
+  min-height: 500px;
+}
+
+/* line 33, ../../assets/sass/styling.scss */
+.center {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 39, ../../assets/sass/styling.scss */
+.content-block-wrapper {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* line 43, ../../assets/sass/styling.scss */
+.content-block {
+  min-height: 200px;
+  background: white;
+  -moz-box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  font-family: "Helvetica Neue", Arial;
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  color: black;
+}
+/* line 55, ../../assets/sass/styling.scss */
+.content-block.full {
+  width: 100%;
+}
+/* line 56, ../../assets/sass/styling.scss */
+.content-block.half {
+  width: 48%;
+}
+/* line 57, ../../assets/sass/styling.scss */
+.content-block.left {
+  float: left;
+}
+/* line 58, ../../assets/sass/styling.scss */
+.content-block.right {
+  float: right;
+}
+/* line 59, ../../assets/sass/styling.scss */
+.content-block.middle {
+  float: left;
+  margin-left: 20px;
+  width: 30% !important;
+}
+/* line 60, ../../assets/sass/styling.scss */
+.content-block.one-third {
+  width: 33%;
+}
+/* line 61, ../../assets/sass/styling.scss */
+.content-block.two-third {
+  width: 63%;
+}
+/* line 63, ../../assets/sass/styling.scss */
+.content-block.height100 {
+  height: 100px;
+}
+/* line 64, ../../assets/sass/styling.scss */
+.content-block.height200 {
+  height: 200px;
+}
+/* line 65, ../../assets/sass/styling.scss */
+.content-block.height300 {
+  height: 300px;
+}
+/* line 66, ../../assets/sass/styling.scss */
+.content-block.height400 {
+  height: 400px;
+}
+/* line 67, ../../assets/sass/styling.scss */
+.content-block.height500 {
+  height: 500px;
+}
+/* line 70, ../../assets/sass/styling.scss */
+.content-block.red {
+  background: #d73230;
+  color: white;
+  text-shadow: black 0 1px 0;
+}
+/* line 71, ../../assets/sass/styling.scss */
+.content-block.white {
+  background: white;
+  text-shadow: #cccccc 0 1px 0;
+}
+/* line 72, ../../assets/sass/styling.scss */
+.content-block.black {
+  background: black;
+}
+/* line 73, ../../assets/sass/styling.scss */
+.content-block.photo1 {
+  background: url(../images/photos/1.png) no-repeat;
+}
+/* line 74, ../../assets/sass/styling.scss */
+.content-block.photo2 {
+  background: url(../images/photos/2.png) no-repeat;
+}
+/* line 75, ../../assets/sass/styling.scss */
+.content-block.photo3 {
+  background: url(../images/photos/3.png) no-repeat;
+}
+/* line 77, ../../assets/sass/styling.scss */
+.content-block .inner-block {
+  padding: 20px;
+}
+/* line 80, ../../assets/sass/styling.scss */
+.content-block .inner-block p {
+  margin: 10px 0;
+}
+/* line 81, ../../assets/sass/styling.scss */
+.content-block .inner-block ul {
+  margin-left: 20px;
+}
+/* line 82, ../../assets/sass/styling.scss */
+.content-block .inner-block li {
+  margin: 10px 0;
+}
+
+/* line 87, ../../assets/sass/styling.scss */
+a.action-button {
+  display: inline-block;
+  padding: 12px 44px;
+  margin: 0 0 20px 10px;
+  font-family: "Helvetica Neue", Arial;
+  font-weight: 200;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  text-shadow: black 0 1px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  background: #d73230;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 102, ../../assets/sass/styling.scss */
+a.action-button.small {
+  font-size: 0.7em !important;
+}
+/* line 103, ../../assets/sass/styling.scss */
+a.action-button.medium {
+  font-size: 1.2em !important;
+}
+/* line 104, ../../assets/sass/styling.scss */
+a.action-button.large {
+  font-size: 1.6em !important;
+}
+/* line 107, ../../assets/sass/styling.scss */
+a.action-button:hover {
+  background: white;
+  color: #d73230;
+  text-shadow: #d73230 0 0 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0 inset, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0 inset, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0 inset, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0 inset, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+}
+
+/* line 115, ../../assets/sass/styling.scss */
+a.inline-button {
+  display: inline-block;
+  padding: 5px 7px;
+  font-family: "Helvetica Neue", Arial;
+  font-weight: 200;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  text-shadow: black 0 1px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  background: #d73230;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 129, ../../assets/sass/styling.scss */
+a.inline-button.small {
+  font-size: 0.7em;
+}
+/* line 130, ../../assets/sass/styling.scss */
+a.inline-button.normal {
+  font-size: 1em;
+  padding: 0 5px;
+}
+/* line 131, ../../assets/sass/styling.scss */
+a.inline-button.medium {
+  font-size: 1.2em;
+}
+/* line 132, ../../assets/sass/styling.scss */
+a.inline-button.large {
+  font-size: 1.6em;
+}
+/* line 135, ../../assets/sass/styling.scss */
+a.inline-button:hover {
+  background: white;
+  color: #d73230;
+  text-shadow: #d73230 0 0 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0 inset, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0 inset, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0 inset, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.27) 0 0 4px 0 inset, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+}
+
+/* line 2, ../../assets/sass/theme_styles/_startpagina2.scss */
+body.startpagina header {
+  font-family: verdana;
+  color: white;
+  position: relative;
+  z-index: 400;
+  width: 100%;
+  height: 600px;
+  background: url(../images/header-startpagina.jpg) 0% 0%;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 -6px 14px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 -6px 14px 0 inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.4) 0 -6px 14px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 -6px 14px 0 inset;
+}
+/* line 21, ../../assets/sass/theme_styles/_startpagina2.scss */
+body.startpagina header .header-height {
+  height: 600px;
+}
+/* line 23, ../../assets/sass/theme_styles/_startpagina2.scss */
+body.startpagina header #topbar {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: "Helvetica Neue", Arial;
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-size: 1em;
+}
+/* line 35, ../../assets/sass/theme_styles/_startpagina2.scss */
+body.startpagina header #topbar a {
+  text-decoration: none;
+  color: white;
+}
+/* line 36, ../../assets/sass/theme_styles/_startpagina2.scss */
+body.startpagina header #topbar a:hover {
+  text-decoration: underline;
+}
+/* line 38, ../../assets/sass/theme_styles/_startpagina2.scss */
+body.startpagina header #topbar #mede-mogelijk-gemaakt-door {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 270px;
+  width: 600px;
+  height: 100px;
+}
+/* line 46, ../../assets/sass/theme_styles/_startpagina2.scss */
+body.startpagina header #topbar #mede-mogelijk-gemaakt-door .wfp {
+  font-weight: 300;
+}
+/* line 48, ../../assets/sass/theme_styles/_startpagina2.scss */
+body.startpagina header #topbar #mede-mogelijk-gemaakt-door img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 20px;
+  margin-left: 20px;
+}
+/* line 51, ../../assets/sass/theme_styles/_startpagina2.scss */
+body.startpagina header #topbar ul {
+  display: table-cell;
+  vertical-align: middle;
+  width: 990px;
+  height: 100px;
+  list-style: none;
+  text-align: right;
+}
+/* line 59, ../../assets/sass/theme_styles/_startpagina2.scss */
+body.startpagina header #topbar ul li {
+  display: inline;
+  margin-left: 20px;
+}
+/* line 66, ../../assets/sass/theme_styles/_startpagina2.scss */
+body.startpagina header #logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 320px;
+  background: rgba(255, 255, 255, 0.9) url(../images/logo-small.png) 45% 80% no-repeat;
+  -moz-border-radius-bottomleft: 30px;
+  -webkit-border-bottom-left-radius: 30px;
+  -o-border-bottom-left-radius: 30px;
+  -ms-border-bottom-left-radius: 30px;
+  -khtml-border-bottom-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  -moz-border-radius-bottomright: 30px;
+  -webkit-border-bottom-right-radius: 30px;
+  -o-border-bottom-right-radius: 30px;
+  -ms-border-bottom-right-radius: 30px;
+  -khtml-border-bottom-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  -o-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.27) 0 1px 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.27) 0 1px 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.27) 0 1px 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.27) 0 1px 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  text-align: center;
+  font-family: "Helvetica Neue", Arial;
+  font-weight: 300;
+  font-size: 1.3em;
+  color: black;
+}
+/* line 84, ../../assets/sass/theme_styles/_startpagina2.scss */
+body.startpagina header #logo #flip-counter {
+  margin: 20px 0 8px 17px;
+  height: 52px;
+  overflow: hidden;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+/* line 92, ../../assets/sass/theme_styles/_startpagina2.scss */
+body.startpagina header #slogan {
+  position: absolute;
+  top: 170px;
+  left: 280px;
+  font-size: 1.7em;
+  font-style: italic;
+  text-shadow: black 0 1px 0;
+}
+/* line 105, ../../assets/sass/theme_styles/_startpagina2.scss */
+body.startpagina #content #action-buttons {
+  font-family: "Helvetica Neue", Arial;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: black;
+}
+/* line 110, ../../assets/sass/theme_styles/_startpagina2.scss */
+body.startpagina #content #action-buttons a.action-button {
+  position: relative;
+  top: -10px;
+  float: right;
+}
+
+/* line 2, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina header {
+  font-family: verdana;
+  color: white;
+  position: relative;
+  z-index: 400;
+  width: 100%;
+  height: 300px;
+  background: url(../images/header-startpagina.jpg) 0% 10%;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 -6px 14px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 -6px 14px 0 inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.4) 0 -6px 14px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 -6px 14px 0 inset;
+}
+/* line 21, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina header .header-height {
+  height: 300px;
+}
+/* line 23, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina header #topbar {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: "Helvetica Neue", Arial;
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-size: 0.85em;
+}
+/* line 35, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina header #topbar #mede-mogelijk-gemaakt-door {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 270px;
+  width: 600px;
+  height: 60px;
+}
+/* line 43, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina header #topbar #mede-mogelijk-gemaakt-door .wfp {
+  font-weight: 300;
+}
+/* line 45, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina header #topbar #mede-mogelijk-gemaakt-door img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 5px;
+  margin-left: 10px;
+}
+/* line 48, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina header #topbar ul {
+  display: table-cell;
+  vertical-align: middle;
+  width: 990px;
+  height: 60px;
+  list-style: none;
+  text-align: right;
+}
+/* line 56, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina header #topbar ul li {
+  display: inline;
+  margin-left: 20px;
+}
+/* line 60, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina header #topbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+/* line 61, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina header #topbar ul li a:hover {
+  text-decoration: underline;
+}
+/* line 65, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina header #topbar ul li.active a {
+  display: inline-block;
+  padding: 8px;
+  font-family: "Helvetica Neue", Arial;
+  font-weight: 300;
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+  text-shadow: white 0 1px 0;
+  background: rgba(255, 255, 255, 0.7);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 78, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina header #topbar ul li.active a:hover {
+  text-decoration: none;
+}
+/* line 83, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina header #logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.9) url(../images/logo-small.png) 45% 50% no-repeat;
+  -moz-border-radius-bottomleft: 30px;
+  -webkit-border-bottom-left-radius: 30px;
+  -o-border-bottom-left-radius: 30px;
+  -ms-border-bottom-left-radius: 30px;
+  -khtml-border-bottom-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  -moz-border-radius-bottomright: 30px;
+  -webkit-border-bottom-right-radius: 30px;
+  -o-border-bottom-right-radius: 30px;
+  -ms-border-bottom-right-radius: 30px;
+  -khtml-border-bottom-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  -o-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.27) 0 1px 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.27) 0 1px 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.27) 0 1px 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.27) 0 1px 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset;
+  text-align: center;
+  font-family: "Helvetica Neue", Arial;
+  font-weight: 300;
+  font-size: 1.3em;
+  color: black;
+}
+/* line 102, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina header #slogan {
+  display: none;
+  position: absolute;
+  top: 110px;
+  left: 280px;
+  font-size: 1.7em;
+  font-style: italic;
+  text-shadow: black 0 1px 0;
+}
+/* line 116, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina #content #action-buttons {
+  font-family: "Helvetica Neue", Arial;
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: black;
+}
+/* line 123, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina #content #action-buttons a.action-button {
+  display: inline-block;
+  padding: 12px 44px;
+  margin: 0 0 20px 10px;
+  font-family: "Helvetica Neue", Arial;
+  font-weight: 200;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  text-shadow: black 0 1px 0;
+  background: #d73230;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 138, ../../assets/sass/theme_styles/_contentpagina2.scss */
+body.contentpagina #content #action-buttons a.action-button:hover {
+  background: white;
+  color: #d73230;
+  text-shadow: black 0 0 0;
+}
+
+/* line 1, ../../assets/sass/partials/_main-navigation.scss */
+#main-navigation {
+  position: absolute;
+  bottom: 0;
+}
+/* line 5, ../../assets/sass/partials/_main-navigation.scss */
+#main-navigation ul {
+  display: table-cell;
+  vertical-align: middle;
+  width: 990px;
+  list-style: none;
+  text-align: left;
+}
+/* line 12, ../../assets/sass/partials/_main-navigation.scss */
+#main-navigation ul li {
+  display: inline-block;
+  margin: 0 0 6px 6px;
+}
+/* line 16, ../../assets/sass/partials/_main-navigation.scss */
+#main-navigation ul li a {
+  display: inline-block;
+  padding: 20px 30px;
+  font-family: "Helvetica Neue", Arial;
+  font-weight: 200;
+  font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.6);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 29, ../../assets/sass/partials/_main-navigation.scss */
+#main-navigation ul li a:hover {
+  background: rgba(255, 255, 255, 0.6);
+  color: #d73230;
+}
+/* line 35, ../../assets/sass/partials/_main-navigation.scss */
+#main-navigation ul li.active {
+  margin: 0 0 0 6px;
+}
+/* line 38, ../../assets/sass/partials/_main-navigation.scss */
+#main-navigation ul li.active a {
+  background: #f4eedc;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -o-border-bottom-left-radius: 0;
+  -ms-border-bottom-left-radius: 0;
+  -khtml-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -o-border-bottom-right-radius: 0;
+  -ms-border-bottom-right-radius: 0;
+  -khtml-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  color: #d73230;
+  padding: 20px 30px 26px 30px;
+}

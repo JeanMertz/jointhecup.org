@@ -1,0 +1,149 @@
+@import "compass";
+
+$container_width: 990px;
+$red: #d73230;
+$content_bg: #F4EEDC;
+
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+  background: $content_bg;
+  }
+
+.container {
+  position: relative;
+  width: $container_width;
+  margin: 0 auto;
+
+  &.no-shadow { @include box-shadow(none); height: 10px; z-index: 300; background: white; }
+  }
+
+#content {
+  background: #F4EEDC;
+  padding: 40px 0;
+  .container {
+    z-index: 200;
+    min-height: 500px;
+    }
+  }
+
+.center {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-block-wrapper {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.content-block {
+  min-height: 200px;
+  background: white;
+  @include box-shadow( rgba(0, 0, 0, 0.27) 0 0 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset);
+  @include border-radius(5px);
+
+  font-family: "Helvetica Neue", Arial;
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  color: black;
+
+  &.full { width: 100%; }
+  &.half { width: 48%; }
+  &.left { float: left; }
+  &.right { float: right; }
+  &.middle { float: left; margin-left: 20px; width: 30% !important; }
+  &.one-third { width: 33%; }
+  &.two-third { width: 63%; }
+
+  &.height100 { height: 100px; }
+  &.height200 { height: 200px; }
+  &.height300 { height: 300px; }
+  &.height400 { height: 400px; }
+  &.height500 { height: 500px; }
+
+
+  &.red { background: $red; color: white; @include single-text-shadow(black, 0, 1px, 0); }
+  &.white { background: white; @include single-text-shadow(#ccc, 0, 1px, 0); }
+  &.black { background: black; }
+  &.photo1 { background: url(../images/photos/1.png) no-repeat; }
+  &.photo2 { background: url(../images/photos/2.png) no-repeat; }
+  &.photo3 { background: url(../images/photos/3.png) no-repeat; }
+
+  .inner-block {
+    padding: 20px;
+
+    p { margin: 10px 0; }
+    ul { margin-left: 20px; }
+    li { margin: 10px 0; }
+    }
+
+  }
+
+a.action-button {
+  display: inline-block;
+  padding: 12px 44px;
+  margin: 0 0 20px 10px;
+  font-family: "Helvetica Neue", Arial;
+  font-weight: 200;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  @include single-text-shadow(black, 0, 1px, 0);
+  @include box-shadow( rgba(0, 0, 0, 0.27) 0 0 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset);
+
+  background: $red;
+  @include border-radius(5px);
+
+  &.small { font-size: 0.7em !important; }
+  &.medium { font-size: 1.2em !important; }
+  &.large { font-size: 1.6em !important; }
+
+
+  &:hover {
+    background: white;
+    color: $red;
+    @include single-text-shadow($red, 0, 0, 0);
+    @include box-shadow( rgba(0, 0, 0, 0.27) 0 0 4px 0 inset, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset);
+    }
+  }
+
+a.inline-button {
+  display: inline-block;
+  padding: 5px 7px;
+  font-family: "Helvetica Neue", Arial;
+  font-weight: 200;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  @include single-text-shadow(black, 0, 1px, 0);
+  @include box-shadow( rgba(0, 0, 0, 0.27) 0 0 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset);
+
+  background: $red;
+  @include border-radius(5px);
+
+  &.small { font-size: 0.7em; }
+  &.normal { font-size: 1em; padding: 0 5px; }
+  &.medium { font-size: 1.2em; }
+  &.large { font-size: 1.6em; }
+
+
+  &:hover {
+    background: white;
+    color: $red;
+    @include single-text-shadow($red, 0, 0, 0);
+    @include box-shadow( rgba(0, 0, 0, 0.27) 0 0 4px 0 inset, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset);
+    }
+  }
+
+
+
+
+@import "theme_styles/startpagina2";
+@import "theme_styles/contentpagina2";
+
+@import "partials/main-navigation"

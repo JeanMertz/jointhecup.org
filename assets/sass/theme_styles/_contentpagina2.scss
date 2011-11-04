@@ -1,0 +1,146 @@
+body.contentpagina {
+  header {
+    $header_height: 300px;
+
+    $topbar_height: 60px;
+
+    $logo_height: 180px;
+    $logo_width: 250px;
+
+
+    font-family: verdana;
+    color: white;
+
+    position: relative;
+    z-index: 400;
+    width: 100%;
+    height: $header_height;
+    background: url(../images/header-startpagina.jpg) 0% 10%;
+    @include box-shadow( rgba(0, 0, 0, 0.4) 0 -6px 14px 0 inset);
+
+    .header-height { height: $header_height; }
+
+    #topbar {
+
+      position: absolute;
+      width: 100%;
+      height: $topbar_height;
+      background: rgba(0,0,0, 0.5);
+
+      font-family: "Helvetica Neue", Arial;
+      letter-spacing: 2px;
+      font-weight: 100;
+      font-size: 0.85em;
+
+      #mede-mogelijk-gemaakt-door {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: $logo_width + 20px;
+        width: 600px;
+        height: $topbar_height;
+
+        .wfp { font-weight: 300; }
+
+        img { position: absolute; width: 50px; height: 50px; top: 5px; margin-left: 10px; }
+        }
+
+      ul {
+        display: table-cell;
+        vertical-align: middle;
+        width: $container_width;
+        height: $topbar_height;
+        list-style: none;
+        text-align: right;
+
+        li {
+          display: inline;
+          margin-left: 20px;
+
+          a { text-decoration: none; color: white; }
+          a:hover { text-decoration: underline; }
+          }
+
+        li.active {
+          a { 
+            display: inline-block;
+            padding: 8px;
+            font-family: "Helvetica Neue", Arial;
+            font-weight: 300;
+            font-size: 1em;
+            color: black;
+            text-decoration: none;
+            @include single-text-shadow(white, 0, 1px, 0);
+
+            background: rgba(white, 0.7);
+            @include border-radius(5px);
+            }
+          a:hover { text-decoration: none; }
+          }
+        }
+      }
+
+    #logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: $logo_width;
+      height: $logo_height;
+      background: rgba(255, 255, 255, 0.9) url(../images/logo-small.png) 45% 50% no-repeat;
+      @include border-bottom-radius(30px);
+      @include box-shadow( rgba(0, 0, 0, 0.8) 0 0 10px);
+      @include box-shadow( rgba(0, 0, 0, 0.27) 0 1px 4px 0, rgba(0, 0, 0, 0.06) 0 0 40px 0 inset);
+
+      text-align: center;
+      font-family: "Helvetica Neue", Arial;
+      
+      font-weight: 300;
+      font-size: 1.3em;
+      color: black;
+      }
+
+    #slogan {
+      display: none;
+      position: absolute;
+      top: $logo_height - 70px;
+      left: $logo_width + 30px;
+
+
+      font-size: 1.7em;
+      font-style: italic;
+      @include single-text-shadow(black, 0, 1px, 0);
+      }
+    }
+
+  #content {
+    #action-buttons {
+      font-family: "Helvetica Neue", Arial;
+      font-weight: 500;
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      color: black;
+
+        a.action-button {
+        display: inline-block;
+        padding: 12px 44px;
+        margin: 0 0 20px 10px;
+        font-family: "Helvetica Neue", Arial;
+        font-weight: 200;
+        font-size: 1em;
+        color: white;
+        text-decoration: none;
+        @include single-text-shadow(black, 0, 1px, 0);
+
+        background: $red;
+        @include border-radius(5px);
+
+
+        &:hover {
+          background: white;
+          color: $red;
+          @include single-text-shadow(black, 0, 0, 0);
+          }
+        }
+      }
+    }
+  }

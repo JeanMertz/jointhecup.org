@@ -1,0 +1,47 @@
+#main-navigation {
+  position: absolute;
+  bottom: 0;
+
+  ul {
+    display: table-cell;
+    vertical-align: middle;
+    width: $container_width;
+    list-style: none;
+    text-align: left;
+
+    li {
+      display: inline-block;
+      margin: 0 0 6px 6px;
+
+      a {
+        display: inline-block;
+        padding: 20px 30px;
+        font-family: "Helvetica Neue", Arial;
+        font-weight: 200;
+        font-size: 1.2em;
+        color: white;
+        text-decoration: none;
+
+        background: rgba(0,0,0, 0.6);
+        @include border-radius(5px);
+
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.6);
+          color: $red;
+          }
+        }
+
+      &.active {
+        margin: 0 0 0 6px;
+
+        a {
+          background: $content_bg;
+          @include border-bottom-radius(0);
+          color: $red;
+          padding: 20px 30px 26px 30px;
+          }
+        }
+      }
+    }
+  }
